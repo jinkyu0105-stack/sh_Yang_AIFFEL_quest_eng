@@ -38,10 +38,12 @@
 # 회고(참고 링크 및 코드 개선)
 ```
 # 리뷰어의 회고
-<img width="1053" height="735" alt="image" src="https://github.com/user-attachments/assets/f81e63c1-fedd-41fd-b78d-dd4aadbdf1df" />
 이번 미션의 코더(양선호님)의 코드는 3가지 점이 인상적이다.
-첫째는 TF = 0.8를 두고 Greedy
-둘째는 비교적 양호한 번역문을 산출해 냈다.
+- 첫째는 최적화 전략으로 Scheduled Teacher Forcing을 0.8를 적용했다는 것이다. 이로 인하여 오바마 - Obama와 같은 단어 정렬(Alignment)이 잘 이루어질 수 있었던 것 같다.
+하지만 TF가 높으면 일반화 능력이 떨어지는 문제를 자율예측을 통하여 보완한 점이 눈에 띄었다. 
+-둘째는 비교적 양호한 번역문을 산출해 냈다.
+<img width="1053" height="735" alt="image" src="https://github.com/user-attachments/assets/db4c5f4a-5640-47ec-b7cf-e4343edfd5f7" />
+충분한 Epoch으로 학습을 진행한 노력의 결과가 아닐 수 없다.
 세째는 향후 성능 개선 가능성이 있다는 것이다.
 # 코드 리뷰 시 참고한 링크가 있다면 링크와 간략한 설명을 첨부합니다.
 # 코드 리뷰를 통해 개선 가능성
